@@ -1,16 +1,15 @@
 {
-	"id": "your-module-name",
-	"name": "your-module-name",
-	"shortname": "module-shortname",
-	"description": "A short one line description of your module",
-	"version": "0.0.0",
+	"id": "generic-http-server",
+	"name": "generic-http-server",
+	"shortname": "http server",
+	"description": "Server files from a specific folder to http clients",
+	"version": "0.1.0",
 	"license": "MIT",
-	"repository": "git+https://github.com/bitfocus/companion-module-your-module-name.git",
-	"bugs": "https://github.com/bitfocus/companion-module-your-module-name/issues",
+	"repository": "git+https://github.com/alex-Arc/companion-module-generic-http-server",
+	"bugs": "https://github.com/alex-Arc/companion-module-generic-http-server/issues",
 	"maintainers": [
 		{
-			"name": "Your name",
-			"email": "Your email"
+			"name": "Alex"
 		}
 	],
 	"runtime": {
@@ -20,7 +19,7 @@
 		"entrypoint": "../dist/main.js"
 	},
 	"legacyIds": [],
-	"manufacturer": "Your company",
-	"products": ["Your product"],
+	"manufacturer": "generic",
+	"products": [],
 	"keywords": []
 }
