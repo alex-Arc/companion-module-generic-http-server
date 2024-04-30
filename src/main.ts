@@ -47,6 +47,13 @@ export class ModuleInstance extends InstanceBase<ModuleConfig> {
 			})
 
 			this.server = app.listen(this.config.port)
+
+			if (this.config.redirect) {
+				app.get('/', (_req, res) => {
+					res.redirect(this.config.path)
+				})
+			}
+
 			app.use(express.static(this.config.folder))
 
 			this.updateStatus(InstanceStatus.Ok)
