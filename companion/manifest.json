@@ -1,7 +1,7 @@
 {
 	"id": "generic-http-server",
 	"name": "generic-http-server",
-	"shortname": "http server",
+	"shortname": "http-server",
 	"description": "Server files from a specific folder to http clients",
 	"version": "0.1.0",
 	"license": "MIT",
@@ -19,7 +19,7 @@
 		"entrypoint": "../dist/main.js"
 	},
 	"legacyIds": [],
-	"manufacturer": "generic",
-	"products": [],
-	"keywords": []
+	"manufacturer": "Generic",
+	"products": ["HTTP Server"],
+	"keywords": ["Generic", "Server"]
 }
