@@ -1,0 +1,32 @@
+name: build
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4        
+        with:
+          node-version: 18
+
+      - name: Install with Yarn
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+
+      - name: Build production bundle
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: package
+      
+      - name: Upload build
+        uses: actions/upload-artifact@v4
+        with:
+          overwrite: true
+          name: companion-module-generic-http-server
+          path: ./pkg
